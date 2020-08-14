@@ -66,7 +66,6 @@ class AddNoteViewController: UIViewController {
 //MARK: - AddNoteViewProtocol
 extension AddNoteViewController: AddNoteViewProtocol {
     func showError(error: Error) {
-        self.showAlert(title: error.localizedDescription, message: "Проверьте соединение с сетью", titleButton: "ОК")
-        print(error.localizedDescription)
+        self.showAlert(title: error.localizedDescription, message: "Проверьте соединение с сетью", titleButton: "OK")
     }
 }

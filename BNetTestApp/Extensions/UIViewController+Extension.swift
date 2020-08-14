@@ -14,6 +14,6 @@ extension UIViewController {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let buttonAction = UIAlertAction(title: titleButton, style: .default, handler: action)
         alertController.addAction(buttonAction)
-        present(alertController, animated: true)
+        parent?.present(alertController, animated: true)
     }
 }
